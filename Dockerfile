@@ -10,5 +10,5 @@ RUN apt-get update && \
 COPY files/index.php /var/www/html/index.php
 COPY files/run.sh /run.sh
 RUN chmod +x /run.sh
-ENTRYPOINT [ "/run.sh" ]
+ENTRYPOINT [ "/run.sh" ] 
 EXPOSE 80
